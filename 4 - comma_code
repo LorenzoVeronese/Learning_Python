@@ -20,7 +20,7 @@ if cont==0:
     print("Non hai inserito elementi.")
 else:
     for i in range (0, cont):
-        res=res + el[i]
+        res=res + str(el[i])
         if i==cont-2:
             res=res + ' and '
         elif i!=cont-1:
