@@ -13,7 +13,7 @@ print('Write down the elements of the list (type "no" to end the insert mode): '
 while last_el!='end':
     last_el=input()
     if last_el!='end':
-        el.append(input)
+        el.append(last_el)
         cont=cont+1
 
 if cont==0:
