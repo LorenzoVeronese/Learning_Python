@@ -32,3 +32,6 @@ def print_table(table):
         print()
 
 print_table(table_data)
+
+'''Edit. I read badly the text of the exercise, so I made the program calcolate the space in lines, not in colums. Anyways the solution
+very similar.'''
