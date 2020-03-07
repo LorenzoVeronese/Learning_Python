@@ -22,7 +22,7 @@ def print_table(table):
         lenght=0
         for j in range(len(table)):
             if len(table[j][i])>lenght:
-                lenght=table[j][i]
+                lenght=len(table[j][i])
         len_table[i]=lenght
     #Now I've the list len_table which contains all the maximum lenghts of each line
 
