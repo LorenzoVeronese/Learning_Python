@@ -5,3 +5,5 @@ I'm learning Python using this book, so the solution of every chapter's excercis
   The first number of the file indicates the chapter, the second part indicates the title of the excercise.
 Report me the errors and, if a more expert guy should come across this contents, I would be happy to see smarter and simple solutions!
   Hope this material will be usefull to all who, as me, are learning Python.
+  
+I also thank the reddit community r/learnpython, which is being helpful and kind in my learning process
