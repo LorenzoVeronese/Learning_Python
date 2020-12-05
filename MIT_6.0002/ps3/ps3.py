@@ -1,3 +1,8 @@
+"""
+LICENSE
+Eric Grimson, John Guttag, and Ana Bell. 6.0002 Introduction to Computational Thinking and Data Science. 
+Fall 2016. Massachusetts Institute of Technology: MIT OpenCourseWare, https://ocw.mit.edu. License: Creative Commons BY-NC-SA.
+"""
 # -*- coding: utf-8 -*-
 # Problem Set 3: Simulating robots
 # Name:
