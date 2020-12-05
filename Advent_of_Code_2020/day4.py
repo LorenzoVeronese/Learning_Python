@@ -29,9 +29,7 @@ def is_document_valid(document):
       else:
             return False
 
-
 filename = "day4.txt"
-
 with open(filename, 'r') as file_pass:
       doc_list = []
       count = 0
