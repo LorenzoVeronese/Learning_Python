@@ -15,12 +15,13 @@ field:data field:data ...
 def is_document_valid(document):
       """
       TAKES:
-            document. A list, containing fields contained in the document
+      document. A list, containing fields contained in the document
       RETURN:
-            boolean, True if the document is valid
+      boolean, True if the document is valid
+      
       EXECUTION:
-            if the list has 8 elements => valid
-            if the lest has 7 elements and not cid => valid
+      if the list has 8 elements => valid
+      if the lest has 7 elements and not cid => valid
       """
       if len(document) == 8:
             return True
