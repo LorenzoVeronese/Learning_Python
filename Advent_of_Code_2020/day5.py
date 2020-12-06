@@ -12,7 +12,6 @@ for each line of the file
       get_value
       check if the value is the best
 """
-import math
 
 def count_rows(filename):
       """
