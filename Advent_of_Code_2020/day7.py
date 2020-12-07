@@ -4,8 +4,8 @@ I don't know why, but when I print the final list containing all bags
 containing the shiny gold one, I get some '[...]' which are not printable
 singularly (nor can they be eliminated) but still are counted in len(list). 
 Anyway, if you count all these '[...]'s (by hand, physically counting 
-them in the output) you obtain 93. If you subtract it to the list's lenght, you optain the correct solution
-to the puzzle. 
+them in the output) you obtain 93. If you subtract it to the list's lenght, 
+you obtain the correct solution to the puzzle. 
 I struggled for hours to understand why these '[...]' where put into the
 list, but I couldn't come up to any conlusion: if you have and idea, please
 contact me. 
