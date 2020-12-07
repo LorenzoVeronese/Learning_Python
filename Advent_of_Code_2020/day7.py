@@ -72,15 +72,11 @@ def make_bags_dict(filename):
                         #after the number I expect 3 spaces    
                         if i == ' ' and spaces != None:
                               spaces += 1
-                              #print(spaces)
                               if spaces == 3:
-                                    #print(c_line[index_start: index - 1])
                                     small_bag_single = c_line[index_start : index - 1]
-                                    small_bag_single = small_bag_single.split(' ')
-                                    #print(small_bag_single)                               
+                                    small_bag_single = small_bag_single.split(' ')                            
                                     small_bag.append(small_bag_single)
                                     small_bag = small_bag
-                                    #print(small_bag, type(small_bag))
                                     spaces = None
                         #I've finished the line, so I need to converge small_bag to big_bag
                         if i == '.':
@@ -99,14 +95,10 @@ def how_many_bags(bag_map, searched, found = []):
       bag_map_temp = dict(bag_map)
       for bag in bag_map:
             if list(searched) in list(bag_map[bag]) and list(bag) not in found:
-                  #print(bag)
-                  #found.append(list(bag))
                   del bag_map_temp[bag]
                   found.append(how_many_bags(bag_map_temp, list(bag), found))
                   count += 1
       if count == 0:
-            #print(searched)
-            #print(found)
             return list(searched)
       else:
             found.append(searched)
