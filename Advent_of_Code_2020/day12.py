@@ -2,9 +2,6 @@
 ---PART ONE---
 """
 """
-PSEUDOCODE
-for every line the first character is a letter, the second one is the number
-
 NOTES
       N,90°
 W,180°      E,0°
