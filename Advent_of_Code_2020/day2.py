@@ -1,4 +1,7 @@
 """
+---PART ONE/TW0---
+"""
+"""
 PSEUDOCODE
 for each line    
       put (x, x, letter) in a list, and password in a string
@@ -28,18 +31,25 @@ def is_pass_valid(constrain, password):
       else:
             return True
 
+def is_pass_valid2(constrain, password):
+      print(constrain, password)
+      return ((password[constrain[0] - 1] == constrain[2] \
+            or password[constrain[1] - 1] == constrain[2]) \
+            and password[constrain[0] - 1] != password[constrain[1] - 1])
+
 filename = "day2.txt"
 with open(filename, 'r') as pass_file:
       count = 0
+      count2 = 0
       #file format: x-x letter: password
       for line in pass_file:
             #I'm not interester in the final '\n'
-            line = line[0 : len(line)-1]
-            #split list in the various components
+            if line[-1] == '\n':
+                  line = line[0 : len(line)-1]
+            #split list in it's various components
             #[x-x letter], password
-            pass_list = line.split(':')
+            pass_list = line.split(': ')
             password = pass_list[1]
-            password = password[1 : len(password)]
             line = pass_list[0]
             #[x-x], letter, password
             pass_list = line.split(' ')
@@ -50,8 +60,14 @@ with open(filename, 'r') as pass_file:
             pass_list[0] = int(pass_list[0])
             pass_list[1] = int(pass_list[1])
             pass_list.append(letter)
-            print(pass_list)
+            
+            #---PART ONE---
             if is_pass_valid(pass_list, password):
                   count += 1
 
+            #---PART TWO---
+            if is_pass_valid2(pass_list, password):
+                  count2 += 1
+
 print(count)
+print(count2)
