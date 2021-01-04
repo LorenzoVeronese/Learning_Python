@@ -1,4 +1,7 @@
 """
+---PART ONE---
+"""
+"""
 PSEUDOCODE
 put each line (number) in a list
 slide the list to find fitted sums
@@ -19,5 +22,20 @@ for year1 in years:
                   print(year1 * year2)
                   finish = 1
                   break
-      if finish:
-            break
+      if finish: break
+
+"""
+---PART TWO---
+"""
+
+#analogous to the previous one
+finish = 0
+for year1 in years:
+      for year2 in years:
+            for year3 in years:
+                  if year1 + year2 + year3 == 2020:
+                        print(year1 * year2 * year3)
+                        finish = 1
+                        break
+            if finish: break
+      if finish: break
