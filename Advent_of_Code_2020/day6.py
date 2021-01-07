@@ -32,3 +32,19 @@ with open(filename, 'r') as ticks:
       total_yes += len(yes_list)
 
 print(total_yes)
+
+"""
+---PART TWO---
+"""
+
+fd = open("day6.txt")
+whole = fd.read().split('\n\n')
+groups = []
+for group in whole:
+      groups.append(group.split('\n'))
+count = 0
+for group in groups:
+      for letter in group[0]:
+            if all(letter in single_group for single_group in group):
+                  count += 1
+print(count)
