@@ -1,5 +1,6 @@
 """
 ---PART ONE---
+after I've made all parts one
 """
 """
 PSEUDOCODE
