@@ -56,4 +56,22 @@ def who_not_sum(xmas_tuple, previous):
 filename = "day9.txt"
 previous = 25
 xmas_tuple = make_xmas_tuple(filename)
-print(who_not_sum(xmas_tuple, previous))
+intruder = who_not_sum(xmas_tuple, previous)
+print(intruder)
+
+
+"""
+---PART TWO---
+"""
+
+def find_couple(xmas_tuple, minimum = 2):
+      lenght = minimum
+      while 1:
+            for x in range(len(xmas_tuple) - lenght):
+                  res = sum(xmas_tuple[x : x + lenght])
+                  if res == intruder:
+                        return min(xmas_tuple[x: x + lenght]), \
+                              max(xmas_tuple[x: x + lenght])
+            lenght += 1
+
+print(sum(find_couple(xmas_tuple)))  
